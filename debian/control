@@ -1,0 +1,49 @@
+Source: xcb-util-xrm
+Priority: optional
+Maintainer: Michael Stapelberg <stapelberg@debian.org>
+Build-Depends: debhelper (>=9),
+               dh-autoreconf,
+               autoconf,
+               automake,
+               pkg-config,
+               libxcb1-dev,
+               libxcb-util0-dev,
+               libx11-dev,
+               libx11-xcb-dev,
+               xutils-dev
+Standards-Version: 3.9.8
+Section: libs
+Homepage: https://github.com/Airblader/xcb-util-xrm
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/xcb-util-xrm.git
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/xcb-util-xrm.git
+
+Package: libxcb-xrm-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libxcb-xrm0 (= ${binary:Version}), ${misc:Depends}, libxcb1-dev, libxcb-util0-dev
+Description: utility functions for the X resource manager, development files
+ This package contains the header and library files needed to build software
+ using libxcb-xrm, providing utility functions for the X resource manager.
+ .
+ The xcb-util module provides a number of libraries which sit on top of libxcb,
+ the core X protocol library, and some of the extension libraries. These
+ experimental libraries provide convenience functions and interfaces which make
+ the raw X protocol more usable. Some of the libraries also provide client-side
+ code which is not strictly part of the X protocol but which have traditionally
+ been provided by Xlib.
+
+Package: libxcb-xrm0
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: utility functions for the X resource manager
+ This package contains the library files needed to run software using
+ libxcb-xrm, providing utility functions for the X resource manager.
+ .
+ The xcb-util module provides a number of libraries which sit on top of libxcb,
+ the core X protocol library, and some of the extension libraries. These
+ experimental libraries provide convenience functions and interfaces which make
+ the raw X protocol more usable. Some of the libraries also provide client-side
+ code which is not strictly part of the X protocol but which have traditionally
+ been provided by Xlib.

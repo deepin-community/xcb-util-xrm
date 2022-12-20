@@ -1,0 +1,24 @@
+xcb-util-xrm (1.0-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:49:33 +0800
+
+xcb-util-xrm (1.0-3) unstable; urgency=medium
+
+  * Install *.a into libxcb-xrm-dev
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Sat, 30 Sep 2017 08:40:32 +0200
+
+xcb-util-xrm (1.0-2) unstable; urgency=medium
+
+  * add Multi-Arch: same
+  * bump Standards-Version to 3.9.8 (no changes necessary)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Tue, 15 Nov 2016 09:49:26 +0100
+
+xcb-util-xrm (1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #821024)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Thu, 14 Apr 2016 19:43:19 +0200
